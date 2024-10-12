@@ -1,0 +1,125 @@
+/* CSS Day 1 Styles */
+
+h1, h2, h3, h4, h5, h6, th {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2d2d2d; /* dark gray */
+    font-size: 1.3em;
+    /* default font size: 16px */
+    /* 1.5em --> 24px */
+
+}
+
+.title {
+    font-size: 1.7em;
+}
+
+#credit {
+    font-size: 0.7em;
+    text-align: center;
+} 
+
+p, ul, td {
+    font-family: Georgia, serif;
+    color: #2d2d2d;
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+a:link, a:visited {
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    background-color: orange;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+}
+
+.odd {
+    background-color: white;
+}
+
+.even {
+    background-color: lightgray;
+}
+
+body {
+    background-image: url("Files/Images/nyc-seal.png");
+    background-repeat: no-repeat; /*prevents bg image from repeating (no tiling)*/
+    background-size: 125px 125px; /*width height*/
+    background-attachment: fixed; /*keeps image fixed in place as I scroll*/
+    background-position: center top; /*positions image*/
+    /* background-color: lightcyan; color of entire page */
+}
+
+/* --- Box Model --- */
+
+#container {
+    width: 80%;
+    /* center the content */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    margin-top: 50px;
+}
+
+#population {
+    margin-top: 50px;
+    border-top: 1px solid orange;
+}
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 30px;;
+}
+
+td {
+    padding: 10px;
+}
+
+.title {
+    text-decoration: none;
+}
+
+/*CSS Flexbox*/
+/*by applying display flex to main,
+all three of its children (articles)
+become their own column*/
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+article {
+    width: calc(90%/3);
+}
+
+ul {
+    list-style-type: none; /*remove bullet points*/
+    padding-left: 0px;
+    display: flex;
+}
+
+li {
+    margin-right: 2%;
+}
+
+/*
+two non-semantic HTML:
+<div> --> block
+<span> --> in-line
+*/
+
+.nyc {
+    text-transform: uppercase;
+}
