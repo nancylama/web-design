@@ -49,7 +49,7 @@ table {
 }
 
 body {
-    background-image: url("Files/Images/nyc-seal.png");
+    background-image: url("images/nyc-seal.png");
     background-repeat: no-repeat; /*prevents bg image from repeating (no tiling)*/
     background-size: 125px 125px; /*width height*/
     background-attachment: fixed; /*keeps image fixed in place as I scroll*/
