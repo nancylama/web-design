@@ -45,9 +45,13 @@ h2 {
     align-items: center;
 }
 
-#movies {
+.movies {
    padding: 10px;
-   border: 10px solid white;
+   border: 5px solid white;
+}
+
+.movies:hover {
+    opacity: 0.5;
 }
 
 .footer-link {
