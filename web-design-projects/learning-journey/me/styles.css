@@ -84,7 +84,7 @@ h2 {
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    border: 5px solid #ff6b6b;
+    border: 10px solid #ff6b6b;
 }
 
 .movies:hover {
