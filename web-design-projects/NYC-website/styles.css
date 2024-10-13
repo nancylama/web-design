@@ -4,7 +4,6 @@ h1, h2, h3, h4, h5, h6, th {
     font-size: 1.3em;
     /* default font size: 16px */
     /* 1.5em --> 24px */
-
 }
 
 .title {
@@ -121,3 +120,4 @@ two non-semantic HTML:
 .nyc {
     text-transform: uppercase;
 }
+
