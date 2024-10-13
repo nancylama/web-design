@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG Practice Logo</title>
+    <style>
+        rect { fill: url(#gradient1); }
+        circle { fill: url(#gradient2); }
+        polygon { fill: url(#gradient3); }
+
+        rect, circle, polygon { opacity: 0.8; }
+        rect:hover, circle:hover, polygon:hover { opacity: 1;}
+    </style>
+</head>
+<body>
+    <svg viewBox="0 0 200 100">
+        <title>Logo with gradient colors</title>
+        <defs>
+            <linearGradient id="gradient1">
+                <stop offset="0%" stop-color="yellow"></stop>
+                <stop offset="100%" stop-color="magenta"></stop>
+            </linearGradient>
+            <linearGradient id="gradient2">
+                <stop offset="0%" stop-color="cyan"></stop>
+                <stop offset="100%" stop-color="yellow"></stop>
+            </linearGradient>
+            <linearGradient id="gradient3">
+                <stop offset="0%" stop-color="magenta"></stop>
+                <stop offset="100%" stop-color="cyan"></stop>
+            </linearGradient>
+        </defs>
+
+        <a href="https://emilydidthis.github.io/CSCI-UA.0004-Fall24/">
+            <rect id="r1" x="0" y="0" width="100" height="100"></rect>
+        </a>
+        <a href="../index.html">
+            <circle cx="100" cy="50" r="50"></circle>
+        </a>
+        <a href="https://i6.cims.nyu.edu/~nl2546/">
+            <polygon points="100,100 150,0 200,100"></polygon>
+        </a>
+    </svg>
+</body>
+</html>
