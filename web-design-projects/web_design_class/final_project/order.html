@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Name of Bakery</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">  
+    </head>
+
+    <body>
+        <header>
+            <div class="group">
+                <div class="logo">
+                    <img src="images/logo.gif" alt="Beary Delightful Bakery Logo">
+                </div>
+
+                <div class="name">
+                    <h3>Beary Delightful Bakery</h3>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="order.html">Order</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="customization">
+                <h1>Customize and Order Your Own Cake!</h1>
+                <form action="https://formspree.io/f/xrbgodev" method="POST" id="form">
+                    <div class="question" id="question-1">
+                    <fieldset>
+                        <legend>Choose Shape</legend>
+                        <label>
+                            <input type="radio" name="shape" value="round">
+                            Round
+                        </label>
+                        <label>
+                            <input type="radio" name="shape" value="square">
+                            Square
+                        </label>
+                        <label>
+                            <input type="radio" name="shape" value="rectangle">
+                            Rectangle
+                        </label>
+                        <label>
+                            <input type="radio" name="shape" value="heart">
+                            Heart
+                        </label>
+                    </fieldset>
+                    </div>
+
+                    <div class="question" id="question-2">
+
+                    <fieldset>
+                        <legend>Choose Number of Tiers</legend>
+                        <label>
+                            <input type="radio" name="tier" value="1">
+                            1
+                        </label>
+                        <label>
+                            <input type="radio" name="tier" value="2">
+                            2
+                        </label>
+                        <label>
+                            <input type="radio" name="tier" value="3">
+                            3
+                        </label>
+                    </fieldset>
+                    </div>
+                    
+                    <div class="question" id="question-3">
+                    <fieldset id="flavor">
+                        <legend>Choose Flavor</legend>
+                        <label>
+                            <input type="radio" name="flavor" value="vanilla">
+                            Vanilla
+                        </label>
+                        <label>
+                            <input type="radio" name="flavor" value="chocolate">
+                            Chocolate
+                        </label>
+                        <label>
+                            <input type="radio" name="flavor" value="red-velvet">
+                            Red Velvet
+                        </label>
+                        <label>
+                            <input type="radio" name="flavor" value="carrot">
+                            Carrot
+                        </label>
+                    </fieldset>
+                    </div>
+
+                    <div class="question" id="question-4">
+                    <fieldset id="decoration">
+                        <legend>Add Toppings</legend>
+                            <label>
+                                <input type="checkbox" name="topping" value="sprinkles">
+                                Sprinkles
+                            </label>
+                            <label>
+                                <input type="checkbox" name="topping" value="berries">
+                                Berries
+                            </label>
+                            <label>
+                                <input type="checkbox" name="topping" value="cookie-crumbs">
+                                Cookie Crumbs
+                            </label>
+                            <label>
+                                <input type="checkbox" name="topping" value="frosting">
+                                Frosting
+                            </label>
+                    </fieldset>
+                    </div>
+
+                    <div class="question" id="question-4">
+                    <fieldset id="writing">
+                        <legend>Add A Message</legend>
+                        <textarea name="message" placeholder="Write a message (optional)"></textarea>
+                    </fieldset>
+                    <button type="submit" id="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>© Copyright 2024 BEARY DELIGHTFUL BAKERY</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

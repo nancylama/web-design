@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beary Delightful</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">  
+    </head>
+
+    <body onload="changeQuote()">
+        <header>
+            <div class="group">
+                <div class="logo">
+                    <img src="images/logo.gif" alt="Beary Delightful Bakery Logo">
+                </div>
+
+                <div class="name">
+                    <h3>Beary Delightful Bakery</h3>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="order.html">Order</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <img src="images/beary_delightful.gif" alt="GIF of bear eating honey" id="bear-gif">
+            <section class="welcome">
+                <h1>Welcome to Beary Delightful Bakery!</h1>
+                <div id="quote">A quote about sweet treats!</div>
+                <p>Indulge in sweet temptations</p>
+                <button class="center"><a href="menu.html">Explore Our Menu</a></button>
+            </section>
+
+            <section class="about">
+                <h2>About Us</h2>
+                <p>At Beary Delightful, we believe that every treat should bring comfort and joy. Our bakery was founded with the goal of creating delicious treats that feel like home. Our menu consists of the delightful treats everyone knows and loves, mixed with some of our favorite Balkan sweets.</p>
+            </section>
+
+            <section class="menu-preview">
+                <h2>Today's Favorites</h2>
+                <div class="favorites">
+                    <div class="item" id="item-1">
+                        <img src="images/menu/tiramisu.jpg">
+                        <h3 id="item-1-name">Tiramisu</h3>
+                        <p id="item-1-description"></p>
+                    </div>
+                    <div class="item" id="item-2">
+                        <img src="images/menu/baklava.jpg">
+                        <h3 id="item-2-name">Baklava</h3>
+                        <p id="item-2-description"></p>
+                    </div>
+                </div>
+                <button><a href="menu.html">View Full Menu</a></button>
+            </section>
+        </main>
+        <footer>
+            <p>© Copyright 2024 BEARY DELIGHTFUL BAKERY</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
+

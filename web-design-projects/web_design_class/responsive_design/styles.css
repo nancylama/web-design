@@ -1,0 +1,136 @@
+header, ul, h2, p, h1 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #6F1A07;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+    color: #2B2118;
+}
+
+body {
+    background-color: #F7F3E3;
+}
+ 
+h2, p {
+    color: #2B2118;
+}
+
+p {
+    padding: 50px;
+}
+
+.banner {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/65/Isfahan_Lotfollah_mosque_ceiling_symmetric.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 100%;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.grid img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    
+}
+
+/* Desktop */
+.gallery {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "img1 img2 img3";
+}
+
+.gallery div {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .gallery {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "img1 img1"
+            "img2 img2"
+            "img3 img3";
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "img1"
+            "img2"
+            "img3";
+    }
+
+    .gallery div {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #e1e1e1;
+    }
+
+    a:link, a:visited {
+        text-decoration: none;
+        color: #F7F3E3;
+    }
+    
+    a:hover, a:active {
+        text-decoration: underline;
+        color: #6F1A07;
+    }
+    
+    h2, p {
+        color: #F7F3E3;
+    }
+}
+
